@@ -1,40 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: #f5f5f5;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    text-align: center;
     padding: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header p {
-    margin: 5px;
 }
 
 .puzzle {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0; /* no gaps between images */
-    max-width: 800px;
-    margin: 20px auto;
+    gap: 0;
+    max-width: 900px; /* Adjust depending on image size */
+    margin: auto;
 }
 
 .puzzle img {
-    width: calc(33.333% - 0px); /* 3 images per row */
+    width: calc(100% / 4); /* Adjust for number of columns (4 here) */
+    height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .hidden {
-    display: none; /* hide faulty piece */
+    display: none;
 }
